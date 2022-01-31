@@ -77,10 +77,9 @@ var exp = function () {
     userinput.value = Math.pow(Math.E, ans);
 };
 //value of pie
-function pie() {
+var pie = function () {
     userinput.value = Math.PI;
-}
-;
+};
 //e function
 var e = function () {
     userinput.value = Math.E;

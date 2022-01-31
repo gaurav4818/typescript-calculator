@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Javascript-Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--css link-->
+    <link rel="stylesheet" href="cal.css">
+</head>
+
+<body>
+    <!--main container-->
+    <div class="container">
+        <table class="main-table">   <!--table-->
+            <tr>
+                <td colspan="5"><input type="text" name="userinput" value="0" id="userinput" max="5"></td>
+            </tr>
+            <tr>
+                <td><button id="deg">DEG</button></td>
+                <td><button id="f-e">F-E</button></td>
+            </tr>
+            <tr>
+                <td><button id="mc" onclick="mc()">MC</button></td>
+                <td><button id="mr" onclick="mr()">MR</button></td>
+                <td><button id="mplus" onclick="mplus()">M+</button></td>
+                <td><button id="m-" onclick="mminus()">M-</button></td>
+                <td><button id="ms" onclick="ms()">MS</button></td>
+            </tr>
+
+            <tr>
+               <td colspan="2"><div class="dropdown"><button id="trignometry" class="trignometry"><img src="trigonometry.png" id="trignoimg" width="15"
+                            height="15" />Trignometry<i class="fa fa-chevron-down" id="trignoicon"></i></button>
+                            <div class="dropdown-content">
+                                <a onclick="sin()">Sin</a>
+                                <a onclick="cos()">Cos</a>
+                                <a onclick="tan()">Tan</a>
+                              </div>
+                        </div></td> 
+                <td colspan="2"><button id="function"><img src="f.png" id="fimg" width="15" height="15" />Function<i
+                            class="fa fa-chevron-down" id="ficon"></i></button></td>
+            </tr>
+            <tr>
+                <td><button>2<sup>nd</sup></button></td>
+                <td><button onclick="pie()">&#960;</button></td>
+                <td><button onclick="e()">e</button></td>
+                <td><button onclick="allclear()">C</button></td>
+                <td><button onclick="clearchar()"><img src="arrow.png" width="15" height="15"></button></td>
+            </tr>
+            <tr>
+                <td><button onclick="square()">x<sup>2</sup></button></td>
+                <td><button onclick="invdiv()">1/x</button></td>
+                <td><button onclick="abs()">|x|</button></td>
+                <td><button onclick="exp()">exp</button></td>
+                <td><button onclick="add('%')">mod</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="sqrt()"><sup>2</sup>&#8730; x</button></td>
+                <td><button onclick="add('(')">(</button></td>
+                <td><button onclick="add(')')">)</button></td>
+                <td><button onclick="fact()">n!</button></td>
+                <td><button id="div" onclick="add('/')">&#xF7;</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="add('**')">x <sup>y</sup></button></td>
+                <td><button class="num" onclick="add('7')">7</button></td>
+                <td><button class="num" onclick="add('8')">8</button></td>
+                <td><button class="num" onclick="add('9')">9</button></td>
+                <td><button id="mul" onclick="add('*')">x</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="ten()">10 <sup>x</sup></button></td>
+                <td><button class="num" onclick="add('4')">4</button></td>
+                <td><button class="num" onclick="add('5')">5</button></td>
+                <td><button class="num" onclick="add('6')">6</button></td>
+                <td><button id="min" onclick="add('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="log()">log</button></td>
+                <td><button class="num" onclick="add('1')">1</button></td>
+                <td><button class="num" onclick="add('2')">2</button></td>
+                <td><button class="num" onclick="add('3')">3</button></td>
+                <td><button id="plus" onclick="add('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="ln()">ln</button></td>
+                <td><button class="pm" onclick="plusmin()">+/-</button></td>
+                <td><button class="num" onclick="add('0')">0</button></td>
+                <td><button class="dot" onclick="add('.')">.</button></td>
+                <td><button class="equal" onclick="result()">=</button></td>
+            </tr>
+        </table>
+    </div>
+    <!--js file-->
+    <script src="cal.js"></script>
+</body>
+
+</html>
